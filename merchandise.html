@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Hawkes Cameron Design - Merchandising gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/flickity.css">
+  <style>
+    /* gallery height */
+    .gallery {
+      height: 100vh;
+    }
+
+    /* cell inherit height from gallery */
+    .gallery-cell {
+      height: 100%;
+    }
+
+    .gallery-cell img {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="closeButton">
+        <a href="index.html">
+          <i class="fa fa-chevron-left"></i> back
+        </a>
+    </div>
+    <div class="title-container gallery-cell">
+      <div class="title">
+        <h1>Merchandise</h1>
+        <h3>Collaboration with filmmakers, musicians and artists to create a diverse range of products, including (but not limited to) album artwork, wearables, a custom camping kit and posters. Clients include  The Art Gallery of Ontario, Aberrant Pictures, Hannah Cheesman, Rich Aucoin, Hey Rosetta! and Vice Magazine.</h3>
+      </div>
+    </div>
+
+    <div class="gallery-cell">
+      <img src="images/merchandise8.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise1.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise2.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise3.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise4.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise5.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise6.jpg">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/merchandise7.jpg">
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
+  <script>
+    $('.gallery').flickity({
+      wrapAround: true,
+      imagesLoaded: true,
+      setGallerySize: false,
+      pageDots: false,
+      cellSelector: '.gallery-cell'
+    });
+  </script>
+</body>
+</html>
