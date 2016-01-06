@@ -302,8 +302,8 @@ section.work {
 
 .contactButton {
   position: absolute;
-  top: 10px;
-  right: 6%;
+  top: -40px;
+  right: 470%;
   z-index: 999;
   background: black;
   height: 70px;
@@ -324,13 +324,17 @@ section.work {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  box-shadow: 2px 2px 1px rgba(241, 241, 241, 0.5);
 }
 
 a.contactButtonLink {
+  position: absolute;
   color: white;
   text-decoration: none;
   padding: 10px;
+}
+
+i.mailLink {
+  font-weight: 800;
 }
 
 footer {
@@ -443,6 +447,9 @@ footer p {
   .aboutWrapper h3 {
     font-size: 13px;
     padding-bottom: 20px;
+  }
+  .contactButtonLink {
+    display: none;
   }
 }
 
