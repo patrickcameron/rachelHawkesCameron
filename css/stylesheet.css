@@ -474,8 +474,8 @@ footer p {
     bottom: 0;
     padding-right: 0;
   }
-  footer span {
-    display: block;
+  footer span.textBlock {
+    white-space: nowrap;
   }
 }
 
@@ -491,7 +491,6 @@ footer p {
   }
 }
 
-/* image galleries */
 /* media queries for image galeries */
 @media (max-width: 630px) {
   .title-container h1 {
