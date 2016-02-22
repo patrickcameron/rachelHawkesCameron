@@ -489,6 +489,9 @@ footer p {
   .aboutWrapper h3 {
     font-size: 11px;
   }
+  .aboutMe {
+    height: auto;
+  }
 }
 
 /* media queries for image galeries */
