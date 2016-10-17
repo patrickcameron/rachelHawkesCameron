@@ -1,5 +1,9 @@
 /*custom styling*/
 
+  a.etsy-link {
+    color: #000 !important; 
+  }
+
 /* gallery height */
     .gallery {
       height: 100vh;

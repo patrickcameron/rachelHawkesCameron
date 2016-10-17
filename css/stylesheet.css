@@ -196,10 +196,46 @@ h3 {
 }
 
 header {
+  background: rgba(255, 255, 255, 0.8);
   height: 60px;
   padding: 0 20px;
-  background: white;
-  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.contactButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #bdbdb1;
+  width: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.contactButtonLink {
+  right: 0;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+i.mailLink {
+  font-weight: 800;
 }
 
 span.shrink {
@@ -228,7 +264,9 @@ section.work {
   width: 20%;
   color: white;
   position: relative;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(50%);
+  -webkit-transition: 0.3s all;
+          transition: 0.3s all;
 }
 
 .workitem h3 {
@@ -284,38 +322,21 @@ section.work {
   background-image: url(../images/zodiac2.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+  width: 60%;
 }
 
 .zodiac:hover {
   -webkit-filter: none;
 }
 
-.thesis {
-  background: url(../images/thesis1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.thesis:hover {
-  -webkit-filter: none;
-}
-
-.contactButton {
-  position: absolute;
-  top: -40px;
-  right: 470%;
-  z-index: 999;
-  background: black;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+.round {
+  height: 110px;
+  width: 110px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -324,18 +345,37 @@ section.work {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-a.contactButtonLink {
+  background: #000;
+  color: #fff;
   position: absolute;
-  right: 0;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
+  left: 50px;
+  top: 50px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: 1s all ease-out;
+          transition: 1s all ease-out;
+  border: 0;
+  z-index: 999;
 }
 
-i.mailLink {
-  font-weight: 800;
+.round:hover {
+  border: 35px solid #000;
+}
+
+.round a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.thesis {
+  display: none;
+  background: url(../images/thesis1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.thesis:hover {
+  -webkit-filter: none;
 }
 
 footer {
@@ -428,9 +468,10 @@ footer p {
     min-height: 200px;
   }
   .workitem h3 {
+    height: auto;
     left: 0;
-    width: 30%;
     min-width: 180px;
+    width: 30%;
   }
   span.shrink {
     font-size: 15px;
@@ -448,9 +489,18 @@ footer p {
     font-size: 13px;
     padding-bottom: 20px;
   }
-  .contactButtonLink {
+  .contactButton {
     display: none;
   }
+  .round {
+    right: 50px;
+    left: auto;
+    top: 50px;
+}
+
+.round:hover {
+  border: 35px solid #000;
+}
 }
 
 @media (max-width: 730px) {
