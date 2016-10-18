@@ -323,11 +323,8 @@ section.work {
   background-size: cover;
   background-position: center;
   position: relative;
-  width: 60%;
-}
-
-.zodiac:hover {
   -webkit-filter: none;
+  width: 60%;
 }
 
 .round {
