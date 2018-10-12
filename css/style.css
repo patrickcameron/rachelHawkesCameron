@@ -398,6 +398,10 @@ footer p {
   display: inline;
 }
 
+.title h1 {
+    font-weight: 500;
+}
+
 /* media queries for main page*/
 @media (max-width: 1024px) {
   section.work {
