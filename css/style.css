@@ -242,7 +242,7 @@ span.shrink {
   font-size: 20px;
 }
 
-section.work {
+.work {
   height: -webkit-calc(100vh - 60px);
   height: calc(100vh - 60px);
   display: -webkit-box;
@@ -264,9 +264,6 @@ section.work {
   width: 20%;
   color: white;
   position: relative;
-  -webkit-filter: grayscale(50%);
-  -webkit-transition: 0.3s all;
-          transition: 0.3s all;
 }
 
 .workitem h3 {
@@ -294,18 +291,16 @@ section.work {
   background-position: center;
 }
 
-.jewelry:hover {
-  -webkit-filter: none;
-}
-
 .illustration {
   background-image: url(../images/illustration2.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.illustration:hover {
-  -webkit-filter: none;
+.ikea {
+  background-image: url(../images/rachel_cameron_ikea_5.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .merchandise {
@@ -314,54 +309,11 @@ section.work {
   background-position: center;
 }
 
-.merchandise:hover {
-  -webkit-filter: none;
-}
-
 .zodiac {
   background-image: url(../images/zodiac2.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
-  -webkit-filter: none;
-  width: 60%;
-}
-
-.round {
-  height: 110px;
-  width: 110px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #000;
-  color: #fff;
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-transition: 1s all ease-out;
-          transition: 1s all ease-out;
-  border: 0;
-  z-index: 999;
-}
-
-.round:hover {
-  border: 35px solid #000;
-}
-
-.round a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .thesis {
@@ -369,10 +321,6 @@ section.work {
   background: url(../images/thesis1.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.thesis:hover {
-  -webkit-filter: none;
 }
 
 footer {
@@ -472,9 +420,6 @@ footer p {
   }
   span.shrink {
     font-size: 15px;
-  }
-  .workitem {
-    -webkit-filter: none;
   }
   .about {
     display: none;

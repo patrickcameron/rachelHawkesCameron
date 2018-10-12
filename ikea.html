@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachel Hawkes Cameron Design - IKEA Halifax</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/flickity.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="closeButton">
+        <a href="index.html">
+          <i class="fa fa-chevron-left"></i> back
+        </a>
+    </div>
+    <div class="gallery-cell title-container">
+      <div class="title">
+        <h1>IKEA Halifax Mural</h1>
+        <h3>A custom wall mural for IKEA's new Halifax, Nova Scotia store.</h3>
+      </div>
+    </div>
+    <div class="gallery-cell">
+        <img src="images/rachel_cameron_ikea_7.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+        <img src="images/rachel_cameron_ikea_5.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+        <img src="images/rachel_cameron_ikea_2.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/rachel_cameron_ikea_1.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/rachel_cameron_ikea_3.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/rachel_cameron_ikea_4.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+      <img src="images/rachel_cameron_ikea_6.jpg" alt="">
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
+
+  <script>
+    $('.gallery').flickity({
+      wrapAround: true,
+      imagesLoaded: true,
+      setGallerySize: false,
+      pageDots: false,
+      cellSelector: '.gallery-cell'
+    });
+  </script>
+
+</body>
+</html>
