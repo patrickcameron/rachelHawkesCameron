@@ -1,8 +1,7 @@
 // Init Barba.js (PJAX)
 if (typeof Barba.Pjax === 'object') {
 
-    Barba.Pjax.start();
-
+    // Make sure Flickity gallery is enabled when the user visits a Gallery page
     var barbaGalleryInit = Barba.BaseView.extend({
       namespace: 'gallery',
       onEnter: function() {
@@ -18,9 +17,9 @@ if (typeof Barba.Pjax === 'object') {
     });
 
     barbaGalleryInit.init();
+    Barba.Prefetch.init();
+    Barba.Pjax.start();
 
-} else {
-    console.log( 'no barba' + typeof Barba.Pjax);
 }
 
 // Init Flickity for galleries
