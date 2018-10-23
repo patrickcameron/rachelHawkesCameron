@@ -4,8 +4,7 @@ if (typeof Barba.Pjax === 'object') {
     // Make sure Flickity gallery is enabled when the user visits a Gallery page
     var barbaGalleryInit = Barba.BaseView.extend({
       namespace: 'gallery',
-      onEnter: function() {
-          console.log( 'Barba view: gallery' );
+      onEnterCompleted: function() {
           $('.gallery').flickity({
             wrapAround: true,
             imagesLoaded: true,
